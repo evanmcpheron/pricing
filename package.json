@@ -1,13 +1,18 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "asdf",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "exec": "npx ts-node ./src/index.ts ./src/data.txt",
+    "exec:false": "npx ts-node ./src/index.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
   "devDependencies": {
+    "@types/node": "^22.7.6",
     "typescript": "^5.5.3"
   },
   "private": true
